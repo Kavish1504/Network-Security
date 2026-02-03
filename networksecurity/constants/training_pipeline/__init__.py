@@ -25,3 +25,15 @@ DATA_VALIDATION_DRIFT_REPORT_FILE_NAME:str="report.yaml"
 
 SCHEMA_FILE_PATH:str=os.path.join("data_schema","schema.yaml")
 
+DATA_TRANSFORMATION_DIR_NAME:str="data_transformation"
+DATA_TRANSFORMATION_TRANSFORMED_DATA_DIR:str="transformed"
+DATA_TRANSFORMATION_TRANSFORMED_OBJECT_DIR:str="transformed_object"
+
+DATA_TRANSFORMATION_IMPUTER_PARAMS:dict={
+    "missing_values":np.nan,
+    "weights":"uniform",
+    "n_neighbors":3,
+}
+
+PREPROCESSING_OBJECT_FILE_NAME:str="preprocessing.pkl"
+
